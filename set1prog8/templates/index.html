@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Ordered List of Numbers</title>
+    
+        
+    
+    </head>
+
+    <body>
+       
+
+        
+        <form method="POST">
+            <table>
+                <tr>
+                    <td>Enter Number:</td>
+                    <td><input type="number" step="0.01" name="num"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Descending Order" formaction="descending">
+                    </td>
+                    <td>
+                        <input type="submit" value="Ascending Order" formaction="ascending">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" formaction="insertNumber" value="Insert Number">
+                    </td>
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" formaction="clearList" value="Clear List">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <p>
+{{numbers}}
+        </p>
+
+        <p>
+           Ascending List: {{ascList}}
+           <br>
+           Descending List: {{descList}}
+        </p>
+        <p>
+          Original List:  {{originalList}}
+        </p>
+    </body>
+</html>
